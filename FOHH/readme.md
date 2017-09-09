@@ -30,7 +30,7 @@
 - [ ] Build the whole thing.
 - [ ] Set up PayPal donation link.
 ## General
-- [ ] Combine/compil html styles & ccs junk.
+- [ ] Combine/compile html styles & ccs junk.
 - [ ] Documentation? Idk, some general readability would be good.
 - [ ] Need a legit company name to put in the 'Website by blahblahblah' line.
 - [ ] Get rid of green page title headings maybe? Take advantage of that nice #FFEFB0 color.
