@@ -87,7 +87,7 @@ h3 {
   background-color: rgb(36, 124, 168);
   border-top: 5px solid rgb(30, 110, 140);
   border-bottom: 5px solid rgb(30, 110, 140);
-  box-shadow: 0 5px 25px #000000;
+  box-shadow: 0 5px 25px #0D2733;
 }
 
 .banner-button {
@@ -236,7 +236,7 @@ h3 {
 @media only screen and (min-width: 800px) {
   .banner-menu{
     text-align: left;
-    box-shadow: 0 5px 25px -8px #000000;
+    box-shadow: 0 5px 25px -8px #0D2733;
   }
   .banner-button {
     padding: 10px 20px;
