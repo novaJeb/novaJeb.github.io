@@ -97,8 +97,29 @@ body {
   background-color: rgba(255, 255, 255, 0.5);
   color: rgb(255, 255, 255);
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
-  transition: background-color 0.3s ease-out, color 0.5s linear, text-shadow 0.3s linear;
+  transition: background-color 0.3s ease-out, color 0.2s linear, text-shadow 0.3s linear;
 }
+
+.foot-button {
+  display: inline-block;
+  /*display: flex;*/
+  text-align: center;
+  font-size: 25px;
+  padding: 20px;
+  margin: 0 20px;
+  width: 170px;
+  /*height: 40px;*/
+  background-color: rgb(36, 124, 168);
+  color: rgb(232, 232, 232);
+  border-radius: 10px;
+}
+
+.foot-button:hover {
+  color: #FFF;
+  background-color: rgb(30, 110, 140);
+  /*font-size: 30px;*/
+}
+
 .dropbtn {
     background-color: #4CAF50;
     color: white;

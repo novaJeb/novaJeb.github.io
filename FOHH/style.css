@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Source Sans Pro', 'Arial', sans-serif;
 }
 
 body {
@@ -68,6 +68,7 @@ h3 {
   padding-left: 15px;
   top: 35px;
   line-height: 50px;
+  font-family: Arial;
   font-size: 60px;
   /*font-family: 'Open Sans', Arial, sans-serif;*/
   text-align: left;
@@ -94,6 +95,7 @@ h3 {
 .banner-button {
   width: 32%;
   font-weight: 600;
+  font-family: 'Open Sans';
   font-size: 1.1em;
   display: inline-block;
   padding: 8px 15px;
