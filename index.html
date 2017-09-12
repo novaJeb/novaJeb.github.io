@@ -13,10 +13,23 @@
       <div style='margin-bottom: 20px; padding: 20px; border-bottom: 5px solid;'>
         <h1 style='font-family: Roboto; font-size: 100px; text-shadow: 2px 2px 2px #FFFFFF;'>Matt's Test Website</h1>
       </div>
-      <a onmouseover='bgChange("#134259")' id='FOHHbutton' class='site-button' href='FOHH/Home.html'><img src='fohhpic.png' class='button-pic' alt='FOHH'>Friends of Holmes Harbor</a>
+      <!-- <a onmouseover='bgChange("#134259")' id='FOHHbutton' class='site-button' href='FOHH/Home.html'><img src='fohhpic.png' class='button-pic' alt='FOHH'>Friends of Holmes Harbor</a>
       <a onmouseover='bgChange("#D8867C")' id='Gitbutton' class='site-button' href='https://github.com/novaJeb'><img src='gitpic.png' class='button-pic' alt='GitHub'>GitHub</br></br></a>
       <a onmouseover='bgChange("#FBDBA8")' id='Artbutton' class='site-button' href=''><img src='lionpic.png' class='button-pic' alt='Art Stuff'>Art Stuff</br></br></a>
-      <a onmouseover='bgChange("#7DC0DB")' id='Rabbutton' class='site-button' href='rabbos/home.html'><img src='rabbitpic.png' class='button-pic' alt='Rabbits'>RABBOS</br></br></a>
+      <a onmouseover='bgChange("#7DC0DB")' id='Rabbutton' class='site-button' href='rabbos/home.html'><img src='rabbitpic.png' class='button-pic' alt='Rabbits'>RABBOS</br></br></a> -->
+
+      <a id='FOHHbutton' class='site-button' href='FOHH/Home.html'><img src='fohhpic.png' class='button-pic' alt='FOHH'>Friends of Holmes Harbor</a>
+      <a id='Gitbutton' class='site-button' href='https://github.com/novaJeb'><img src='gitpic.png' class='button-pic' alt='GitHub'>GitHub</br></br></a>
+      <a id='Artbutton' class='site-button' href=''><img src='lionpic.png' class='button-pic' alt='Art Stuff'>Art Stuff</br></br></a>
+      <a id='Rabbutton' class='site-button' href='rabbos/home.html'><img src='rabbitpic.png' class='button-pic' alt='Rabbits'>RABBOS</br></br></a>
+    </div>
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
     </div>
     <script type="text/javascript">
       // document.write(new Date().getFullYear());
@@ -29,6 +42,28 @@
     <script type='text/javascript'>
       function bgChange(bg) {
         document.body.style.background = bg;
+      }
+    </script>
+    <script>
+      /* When the user clicks on the button,
+      toggle between hiding and showing the dropdown content */
+      function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+      }
+
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
       }
     </script>
   </body>
