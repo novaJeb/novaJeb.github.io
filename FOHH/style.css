@@ -68,7 +68,7 @@ h3 {
   padding-left: 15px;
   top: 35px;
   line-height: 50px;
-  font-family: Arial;
+  font-family: 'Source Sans Pro';
   font-size: 60px;
   /*font-family: 'Open Sans', Arial, sans-serif;*/
   text-align: left;
@@ -90,6 +90,7 @@ h3 {
   border-top: 5px solid rgb(30, 110, 140);
   border-bottom: 5px solid rgb(30, 110, 140);
   box-shadow: 0 5px 25px #0D2733;
+  box-shadow: rgba(13, 39, 51, 0.5);
 }
 
 .banner-button {
@@ -149,6 +150,7 @@ h3 {
 }
 
 .resource-button {
+  font-family: 'Open Sans';
   display: inline-block;
   text-align: center;
   font-size: 20px;
@@ -163,6 +165,7 @@ h3 {
 .resource-button:hover {
   color: #FFF;
   background-color: rgb(14, 110, 140);
+  /*box-shadow: 0 5px 30px -25px #000000;*/
 }
 .blueback {
   display: inline-block;
