@@ -1,3 +1,15 @@
+# Resources
+#### Color Palette
+- Site background: 134259
+- Buttons: 247CA8
+- Button selected/Page trim: 1E6E8C
+- Yellolinks: FFEFB0
+- Greenbacks: 608B15
+- White text: E8E8E8
+#### Other Relevant Sites
+- [Old Friends Of Holmes Harbor](http://http://friendsofholmesharbor.org/)
+- [Some good stuff at Holmes Harbor Estates](http://holmesharborestates.ihost.net/resources/)
+
 # FOHH Task List
 ## Page Specific
 ### Home / Landing Page
@@ -19,7 +31,7 @@
 - [ ] Build the whole thing.  It's empty.
 ### Resources
 - [ ] Tweak formatting/copywriting.
-- [ ] Ad any releant links/info from other Whidbey Island/Island County/Holmes Harbor sites.
+- [ ] Add any relevant links/info from other Whidbey Island/Island County/Holmes Harbor sites.
 - [ ] Make sure all info is up-to-date.
 - [ ] Find out when next elections are for county/state/federal representatives.
 ### Archive
