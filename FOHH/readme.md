@@ -7,7 +7,7 @@
 - Greenbacks: 608B15
 - White text: E8E8E8
 #### Other Relevant Sites
-- [Old Friends Of Holmes Harbor](http://http://friendsofholmesharbor.org/)
+- [Old Friends Of Holmes Harbor](http://http://friendsofholmesharbor.org)
 - [Some good stuff at Holmes Harbor Estates](http://holmesharborestates.ihost.net/resources/)
 
 # FOHH Task List
