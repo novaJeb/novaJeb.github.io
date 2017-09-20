@@ -34,13 +34,15 @@
 
         </div>
         <div class='col-10'>
-
+          <p class='para-main text-white'>
+            Click on the pictures below for more information!</p>
         </div>
         <div class='col-5' style='padding: 0 50px;'>
           <div class='image-area text-align-center'>
-            <img src='IMG_2550.jpg' alt='Small Sailboat Regatta' style='width:100%; max-width: 800px;'>
+            <h2 id='issue-h2' style='font-size: 30px;'>Giant Pile Worm</h2>
+            <img src='IMG_2550.jpg' alt='Giant Pile Worm' style='width:100%; max-width: 800px; cursor: pointer;' onclick='toggleInfo("worm-area")'>
           </div>
-          <div class='content-area'>
+          <div id='worm-area'class='content-area' style='overflow-y: hidden; transition: .5s ease-in-out; max-height: 0;'>
             <h2 id='issue-h2'>Giant Pile Worm</h2>
             <p class='para-main text-white'>
               <i><u>Nereis brandti</i></u></br>
@@ -52,9 +54,10 @@
         </div>
         <div class='col-5' style='padding: 0 50px;'>
           <div class='image-area text-align-center'>
-            <img src='IMG_2555.jpg' alt='Small Sailboat Regatta' style='width:100%; max-width: 800px;'>
+            <h2 id='issue-h2' style='font-size: 30px;'>Purple Varnish Clam</h2>
+            <img src='IMG_2555.jpg' alt='Purple Varnish Clam' style='width:100%; max-width: 800px; cursor: pointer;' onclick='toggleInfo("varnish-area")'>
           </div>
-          <div class='content-area'>
+          <div id='varnish-area' class='content-area' style='overflow-y: hidden; transition: .5s ease-in-out; max-height: 0;'>
             <h2 id='issue-h2'>Purple Varnish Clam</h2>
             <p class='para-main text-white'>
               <i><u>Nuttalia obscurata</i></u></br>
@@ -70,9 +73,10 @@
         </div>
         <div class='col-5' style='padding: 0 50px;'>
           <div class='image-area text-align-center'>
-            <img src='IMG_2565.jpg' alt='Small Sailboat Regatta' style='width:100%; max-width: 800px;'>
+            <h2 id='issue-h2' style='font-size: 30px;'>Butter Clam</h2>
+            <img src='IMG_2565.jpg' alt='Butter Clam' style='width:100%; max-width: 800px; cursor: pointer;' onclick='toggleInfo("butter-area")'>
           </div>
-          <div class='content-area'>
+          <div id='butter-area' class='content-area' style='overflow-y: hidden; transition: .5s ease-in-out; max-height: 0;'>
             <h2 id='issue-h2'>Butter Clam</h2>
             <p class='para-main text-white'>
               <i><u>Saxidomus gigantea</i></u></br>
@@ -95,5 +99,27 @@
         </div>
       </div>
     </div>
+    <script>
+      function toggleInfo(target_area) {
+        var targo = document.getElementById(target_area)
+        var targonum = targo.clientHeight;
+        // alert(targonum)
+        if (targonum < 1) {
+          targo.style.maxHeight = '800px';
+        } else if (targonum > 0) {
+          targo.style.maxHeight = '0';
+        }
+        // alert(targo)
+        // alert('HEY')
+        // alert(target_area)
+      }
+      function openNav() {
+          document.getElementById("worm-area").style.height = "100%";
+      }
+
+      function closeNav() {
+          document.getElementById("worm-area").style.height = "0";
+      }
+    </script>
   </body>
 </html>
