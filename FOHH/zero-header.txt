@@ -20,9 +20,8 @@
           <a class='banner-button' href='Home.html'>Home</a>
           <a class='banner-button' href='About.html'>About Us</a>
           <a class='banner-button' href='Issues.html'>Current Issues</a>
-          <a class='banner-button' href='Education.html'>Educational</a>
+          <a class='banner-button' href='Education.html'>Education</a>
           <a class='banner-button' href='Resources.html'>Resources</a>
           <a class='banner-button' href='Archive.html'>Archive</a>
-          <!-- <a class='banner-button' href='FOHH-Contact.html'>Contact</a> -->
         </nav>
       </div>
