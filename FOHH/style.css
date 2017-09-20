@@ -144,6 +144,9 @@ h3 {
     vertical-align: bottom;
     display: none;
 }
+#education-pic {
+  display: none;
+}
 .background-white {
   /*margin: 0;*/
   background-color: rgb(232, 232, 232);
@@ -260,6 +263,9 @@ h3 {
   #img-sunrise {
     display: inline-block;
   }
+  #education-pic {
+    display: inline-block;
+  }
   .image-area-issues {
     display: inline-block;
   }
@@ -356,4 +362,13 @@ h3 {
 
 .text-white {
   color: rgb(232, 232, 232);
+}
+
+.text-yello {
+  color: #FFEFB0;
+}
+
+.picture-shadow {
+  box-shadow: 0 5px 10px #0D2733;
+  box-shadow: rgba(13, 39, 51, 0.5);
 }

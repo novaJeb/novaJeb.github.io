@@ -27,21 +27,30 @@
         </nav>
       </div>
       <div class='content'>
-        <div class='col-6'>
-
-        </div>
         <div class='col-4'>
-
+          <div class='content-area'>
+            <h1 class='greenback-long'>Education</h1>
+          </div>
+          <div class='image-area text-align-center' style='padding-top: 15px;'>
+            <img id='education-pic' src='education-pic.png' alt='Giant Pile Worm' class='picture-shadow' style='width:100%; max-width: 800px;'>
+          </div>
         </div>
-        <div class='col-10'>
-          <p class='para-main text-white'>
+        <div class='col-6'>
+          <p class='para-main text-yello' style='font-size: 28px;'>
+            Teaching our children and ourselves how to step lightly on the shores of Holmes Harbor.
+            Many sensitive creatures live in the water and on the beach.</br></br>
+            Discover the magic lying beneath the surface.
+          </p>
+        </div>
+        <div class='col-10' style='padding: 20px 0;'>
+          <p class='para-main text-white' style='text-align: center; font-size: 23px;'>
             Click on the pictures below for more information!</p>
         </div>
 
         <div class='col-5' style='padding: 0 50px;'>
           <div class='image-area text-align-center'>
             <h2 id='issue-h2' style='font-size: 30px;'>Giant Pile Worm</h2>
-            <img src='pile-worm.jpg' alt='Giant Pile Worm' style='width:100%; max-width: 800px; cursor: pointer;' onclick='toggleInfo("worm-area")'>
+            <img src='pile-worm.jpg' alt='Giant Pile Worm' class='picture-shadow' style='width:100%; max-width: 800px; cursor: pointer;' onclick='toggleInfo("worm-area")'>
           </div>
           <div id='worm-area'class='content-area' style='overflow-y: hidden; transition: .5s ease-in-out; max-height: 0;'>
             <h2 id='issue-h2'>Giant Pile Worm</h2>
@@ -57,7 +66,7 @@
         <div class='col-5' style='padding: 0 50px;'>
           <div class='image-area text-align-center'>
             <h2 id='issue-h2' style='font-size: 30px;'>Purple Varnish Clam</h2>
-            <img src='varnish-clam.jpg' alt='Purple Varnish Clam' style='width:100%; max-width: 800px; cursor: pointer;' onclick='toggleInfo("varnish-area")'>
+            <img src='varnish-clam.jpg' alt='Purple Varnish Clam' class='picture-shadow' style='width:100%; max-width: 800px; cursor: pointer;' onclick='toggleInfo("varnish-area")'>
           </div>
           <div id='varnish-area' class='content-area' style='overflow-y: hidden; transition: .5s ease-in-out; max-height: 0;'>
             <h2 id='issue-h2'>Purple Varnish Clam</h2>
@@ -77,7 +86,7 @@
         <div class='col-5' style='padding: 0 50px;'>
           <div class='image-area text-align-center'>
             <h2 id='issue-h2' style='font-size: 30px;'>Butter Clam</h2>
-            <img src='butter-clam.jpg' alt='Butter Clam' style='width:100%; max-width: 800px; cursor: pointer;' onclick='toggleInfo("butter-area")'>
+            <img src='butter-clam.jpg' alt='Butter Clam' class='picture-shadow' style='width:100%; max-width: 800px; cursor: pointer;' onclick='toggleInfo("butter-area")'>
           </div>
           <div id='butter-area' class='content-area' style='overflow-y: hidden; transition: .5s ease-in-out; max-height: 0;'>
             <h2 id='issue-h2'>Butter Clam</h2>
@@ -94,7 +103,7 @@
         <div class='col-5' style='padding: 0 50px;'>
           <div class='image-area text-align-center'>
             <h2 id='issue-h2' style='font-size: 30px;'>Sand Shrimp</h2>
-            <img src='sand-shrimp.jpg' alt='Sand Shrimp' style='width:100%; max-width: 800px; cursor: pointer;' onclick='toggleInfo("shrimp-area")'>
+            <img src='sand-shrimp.jpg' alt='Sand Shrimp' class='picture-shadow' style='width:100%; max-width: 800px; cursor: pointer;' onclick='toggleInfo("shrimp-area")'>
           </div>
           <div id='shrimp-area' class='content-area' style='overflow-y: hidden; transition: .5s ease-in-out; max-height: 0;'>
             <h2 id='issue-h2'>Sand Shrimp</h2>
@@ -111,7 +120,7 @@
         <div class='col-5' style='padding: 0 50px;'>
           <div class='image-area text-align-center'>
             <h2 id='issue-h2' style='font-size: 30px;'>Pacific Littleneck</h2>
-            <img src='littleneck.jpg' alt='Pacific Littleneck' style='width:100%; max-width: 800px; cursor: pointer;' onclick='toggleInfo("littleneck-area")'>
+            <img src='littleneck.jpg' alt='Pacific Littleneck' class='picture-shadow' style='width:100%; max-width: 800px; cursor: pointer;' onclick='toggleInfo("littleneck-area")'>
           </div>
           <div id='littleneck-area' class='content-area' style='overflow-y: hidden; transition: .5s ease-in-out; max-height: 0;'>
             <h2 id='issue-h2'>Pacific Littleneck</h2>
@@ -140,9 +149,8 @@
       function toggleInfo(target_area) {
         var targo = document.getElementById(target_area)
         var targonum = targo.clientHeight;
-        // alert(targonum)
         if (targonum < 1) {
-          targo.style.maxHeight = '800px';
+          targo.style.maxHeight = '600px';
         } else if (targonum > 0) {
           targo.style.maxHeight = '0';
         }
