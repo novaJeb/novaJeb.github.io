@@ -29,15 +29,16 @@
     <a id='Rabbutton' class='site-button' href='rabbos/home.html'><img src='rabbitpic.png' class='button-pic' alt='Rabbits'>RABBOS</br></br></a>
   </div>
   <div style='background-color: rgba(220, 220, 220, 0.4); text-align: center; font-size: 0;'>
+    <h2 style='font-family: Roboto; font-size: 30px;'>Click the squares to make them do the thing</h2>
     <div>
       <div style='display: inline-block'>
-        <div id='redtarget' class='color-button' style='background-color: yellow; height: 0;'>
+        <div id='redtarget' class='color-button' style='background-image: url("yellogear.png"); background-position: center; background-color: yellow; height: 0;'>
         </div>
         <div id='greentarget' class='color-button' style='background-color: green;' onclick='toggleOr("greentarget")'>
         </div>
       </div>
       <div style='display: inline-block'>
-        <div id='bluetarget' class='color-button' style='background-color: green; height: 0;'>
+        <div id='bluetarget' class='color-button' style='background-image: url("greengear.png"); background-position: center;background-color: green; height: 0;'>
         </div>
         <div id='yellowtarget' class='color-button' style='background-color: yellow;' onclick='toggleOr("yellowtarget")'>
         </div>
@@ -151,7 +152,7 @@
   </script>
   <script>
     /* When the user clicks on the button,
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              toggle between hiding and showing the dropdown content */
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      toggle between hiding and showing the dropdown content */
     function myFunction() {
       document.getElementById("myDropdown").classList.toggle("show");
     }
