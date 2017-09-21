@@ -78,6 +78,14 @@ body {
   height: auto;
 }
 
+.color-button {
+   transition: 1s;
+   height: 100px;
+   width: 100px;
+   display: inline-block;
+   text-align: center;
+   margin: auto;
+}
 .site-button {
     max-width: 250px;
     /*min-width: 375px;*/

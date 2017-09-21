@@ -28,17 +28,45 @@
     <a id='Artbutton' class='site-button' href='#'><img src='lionpic.png' class='button-pic' alt='Art Stuff'>Art Stuff</br></br></a>
     <a id='Rabbutton' class='site-button' href='rabbos/home.html'><img src='rabbitpic.png' class='button-pic' alt='Rabbits'>RABBOS</br></br></a>
   </div>
-  <div style='background-color: #EEE; height: 400px; display: center; text-align: center; font-size: 0;'>
+  <div style='background-color: rgba(220, 220, 220, 0.4); text-align: center; font-size: 0;'>
     <div>
-      <div id='redtarget' style='transition: 1s; background-color: red; height: 100px; width: 100px; display: inline-block; text-align: center; margin: auto;' onclick='toggleInfo("redtarget");checktallness("redtarget","bluetarget")'>
+      <div style='display: inline-block'>
+        <div id='redtarget' class='color-button' style='background-color: red;' onclick='toggleInfo("redtarget")'></div>
+        <div id='greentarget' class='color-button' style='background-color: green;' onclick='toggleInfo("greentarget")'></div>
       </div>
-      <div id='bluetarget' style='transition: 1s; background-color: blue; height: 100px; width: 100px; display: inline-block; text-align: center; margin: auto;' onclick='toggleInfo("bluetarget");checktallness("bluetarget","redtarget")'>
+      <div style='display: inline-block'>
+        <div id='bluetarget' class='color-button' style='background-color: blue;' onclick='toggleInfo("bluetarget")'></div>
+        <div id='yellowtarget' class='color-button' style='background-color: yellow;' onclick='toggleInfo("yellowtarget")'></div>
       </div>
     </div>
     <div>
-      <div id='blacktarget' style='transition: 1s; background-color: black; height: 100px; width: 100px; display: inline-block; text-align: center; margin: auto;' onclick='toggleInfo("blacktarget");checktallness("blacktarget","greentarget")'>
+      <div style='display: inline-block'>
+        <div id='redtarget2' class='color-button' style='background-color: red;' onclick='toggleInfo("redtarget2")'></div>
+        <div id='greentarget2' class='color-button' style='background-color: green;' onclick='toggleInfo("greentarget2")'></div>
       </div>
-      <div id='greentarget' style='transition: 1s; background-color: green; height: 100px; width: 100px; display: inline-block; text-align: center; margin: auto;' onclick='toggleInfo("greentarget");checktallness("greentarget","blacktarget")'>
+      <div style='display: inline-block'>
+        <div id='bluetarget2' class='color-button' style='background-color: blue;' onclick='toggleInfo("bluetarget2")'></div>
+        <div id='yellowtarget2' class='color-button' style='background-color: yellow;' onclick='toggleInfo("yellowtarget2")'></div>
+      </div>
+    </div>
+    <div>
+      <div style='display: inline-block'>
+        <div id='redtarget3' class='color-button' style='background-color: red;' onclick='toggleInfo("redtarget3")'></div>
+        <div id='greentarget3' class='color-button' style='background-color: green;' onclick='toggleInfo("greentarget3")'></div>
+      </div>
+      <div style='display: inline-block'>
+        <div id='bluetarget3' class='color-button' style='background-color: blue;' onclick='toggleInfo("bluetarget3")'></div>
+        <div id='yellowtarget3' class='color-button' style='background-color: yellow;' onclick='toggleInfo("yellowtarget3")'></div>
+      </div>
+    </div>
+    <div>
+      <div style='display: inline-block'>
+        <div id='redtarget4' class='color-button' style='background-color: red;' onclick='toggleInfo("redtarget4")'></div>
+        <div id='greentarget4' class='color-button' style='background-color: green;' onclick='toggleInfo("greentarget4")'></div>
+      </div>
+      <div style='display: inline-block'>
+        <div id='bluetarget4' class='color-button' style='background-color: blue;' onclick='toggleInfo("bluetarget4")'></div>
+        <div id='yellowtarget4' class='color-button' style='background-color: yellow;' onclick='toggleInfo("yellowtarget4")'></div>
       </div>
     </div>
   </div>
@@ -94,7 +122,7 @@
   </script>
   <script>
     /* When the user clicks on the button,
-                                                                                                                                                                                              toggle between hiding and showing the dropdown content */
+                                                                                                                                                                                                                                                              toggle between hiding and showing the dropdown content */
     function myFunction() {
       document.getElementById("myDropdown").classList.toggle("show");
     }
