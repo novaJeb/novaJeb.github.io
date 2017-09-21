@@ -11,12 +11,9 @@
 </head>
 
 <body>
-  <div class='container'>
+  <div class='container' style='height: 1000px;'>
     <div style='margin-bottom: 20px; padding: 20px; border-bottom: 5px solid; box-shadow: 0 15px 30px -20px #000;'>
       <h1 style='font-family: Roboto; font-size: 110px; text-shadow: 2px 2px 2px #FFFFFF;'>Matt's Test Website</h1>
-      <script>
-        document.write(document.body.style.backgroundColor);
-      </script>
     </div>
     <!-- <a onmouseover='bgChange("#134259")' id='FOHHbutton' class='site-button' href='FOHH/Home.html'><img src='fohhpic.png' class='button-pic' alt='FOHH'>Friends of Holmes Harbor</a>
       <a onmouseover='bgChange("#D8867C")' id='Gitbutton' class='site-button' href='https://github.com/novaJeb'><img src='gitpic.png' class='button-pic' alt='GitHub'>GitHub</br></br></a>
@@ -27,24 +24,24 @@
     <a id='Gitbutton' class='site-button' href='https://github.com/novaJeb'><img src='gitpic.png' class='button-pic' alt='GitHub'>GitHub</br></br></a>
     <a id='Artbutton' class='site-button' href='#'><img src='lionpic.png' class='button-pic' alt='Art Stuff'>Art Stuff</br></br></a>
     <a id='Rabbutton' class='site-button' href='rabbos/home.html'><img src='rabbitpic.png' class='button-pic' alt='Rabbits'>RABBOS</br></br></a>
-  </div>
-  <div style='background-color: rgba(220, 220, 220, 0.4); text-align: center; font-size: 0;'>
-    <h2 style='font-family: Roboto; font-size: 30px;'>Click the squares to make them do the thing</h2>
-    <div>
-      <div style='display: inline-block'>
-        <div id='redtarget' class='color-button' style='background-image: url("yellogear.png"); background-position: center; background-color: yellow; height: 0;'>
+    <!-- </div> -->
+    <div style='background-color: rgba(220, 220, 220, 0.4); text-align: center; font-size: 0;'>
+      <h2 style='font-family: Roboto; font-size: 30px;'>Click the squares to make them do the thing</h2>
+      <div>
+        <div style='display: inline-block'>
+          <div id='redtarget' class='color-button' style='background-image: url("blackgear.png"); background-position: center; background-color: yellow; height: 0;'>
+          </div>
+          <div id='greentarget' class='color-button' style='background-color: green;' onclick='toggleOr("greentarget")'>
+          </div>
         </div>
-        <div id='greentarget' class='color-button' style='background-color: green;' onclick='toggleOr("greentarget")'>
+        <div style='display: inline-block'>
+          <div id='bluetarget' class='color-button' style='background-image: url("whitegear.png"); background-position: center;background-color: green; height: 0;'>
+          </div>
+          <div id='yellowtarget' class='color-button' style='background-color: yellow;' onclick='toggleOr("yellowtarget")'>
+          </div>
         </div>
       </div>
-      <div style='display: inline-block'>
-        <div id='bluetarget' class='color-button' style='background-image: url("greengear.png"); background-position: center;background-color: green; height: 0;'>
-        </div>
-        <div id='yellowtarget' class='color-button' style='background-color: yellow;' onclick='toggleOr("yellowtarget")'>
-        </div>
-      </div>
-    </div>
-    <!-- <div>
+      <!-- <div>
       <div style='display: inline-block'>
         <div id='redtarget' class='color-button' style='background-color: red;' onclick='toggleInfo("redtarget")'></div>
         <div id='greentarget' class='color-button' style='background-color: green;' onclick='toggleInfo("greentarget")'></div>
@@ -54,124 +51,124 @@
         <div id='yellowtarget' class='color-button' style='background-color: yellow;' onclick='toggleInfo("yellowtarget")'></div>
       </div>
     </div> -->
-  </div>
-  <div class="dropdown">
-    <button onclick="myFunction()" class="dropbtn">Dropdown</button>
-    <div id="myDropdown" class="dropdown-content">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
     </div>
-  </div>
-  <a class='foot-button' href='Contact.html'>Contact Us</a>
-  <script>
-    var yelBig = false;
-    var grnBig = false;
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+    <a class='foot-button' href='Contact.html'>Contact Us</a>
+    <script>
+      var yelBig = false;
+      var grnBig = false;
 
-    function toggleOr(target_area) {
-      // alert('yelBig=' + yelBig + '|| grnBig=' + grnBig);
-      if (target_area == "yellowtarget") {
-        if (yelBig) { // make yellow SMALL
-          yelBig = false;
-          document.getElementById('yellowtarget').style.height = '150px';
-          document.getElementById('yellowtarget').style.width = '150px';
-          if (grnBig) { // green BIG
-            document.getElementById('bluetarget').style.height = '150px';
-            document.getElementById('bluetarget').style.width = '150px';
-            document.getElementById('redtarget').style.height = '0';
-            document.getElementById('redtarget').style.width = '300px';
+      function toggleOr(target_area) {
+        // alert('yelBig=' + yelBig + '|| grnBig=' + grnBig);
+        if (target_area == "yellowtarget") {
+          if (yelBig) { // make yellow SMALL
+            yelBig = false;
+            document.getElementById('yellowtarget').style.height = '150px';
+            document.getElementById('yellowtarget').style.width = '150px';
+            if (grnBig) { // green BIG
+              document.getElementById('bluetarget').style.height = '150px';
+              document.getElementById('bluetarget').style.width = '150px';
+              document.getElementById('redtarget').style.height = '0';
+              document.getElementById('redtarget').style.width = '300px';
+            } else if (!grnBig) {
+              document.getElementById('bluetarget').style.height = '0';
+              document.getElementById('bluetarget').style.width = '150px';
+              document.getElementById('redtarget').style.height = '0';
+              document.getElementById('redtarget').style.width = '150px';
+            }
+          } else if (!yelBig) { // make yellow BIG
+            yelBig = true;
+            document.getElementById('yellowtarget').style.height = '300px';
+            document.getElementById('yellowtarget').style.width = '300px';
+            if (grnBig) {
+              document.getElementById('redtarget').style.height = '0px';
+              document.getElementById('redtarget').style.width = '300px';
+              document.getElementById('bluetarget').style.height = '0';
+              document.getElementById('bluetarget').style.width = '300px';
+            } else if (!grnBig) { // green SMALL
+              document.getElementById('redtarget').style.height = '150px';
+              document.getElementById('redtarget').style.width = '150px';
+              document.getElementById('bluetarget').style.height = '0';
+              document.getElementById('bluetarget').style.width = '300px';
+            }
+          }
+        } else if (target_area == "greentarget") {
+          if (grnBig) { // make green SMALL
+            grnBig = false;
+            document.getElementById('greentarget').style.height = '150px';
+            document.getElementById('greentarget').style.width = '150px';
+            if (yelBig) {
+              document.getElementById('redtarget').style.height = '150px';
+              document.getElementById('redtarget').style.width = '150px';
+              document.getElementById('bluetarget').style.height = '0';
+              document.getElementById('bluetarget').style.width = '300px';
+            } else if (!yelBig) {
+              document.getElementById('redtarget').style.height = '0';
+              document.getElementById('redtarget').style.width = '150px';
+              document.getElementById('bluetarget').style.height = '0';
+              document.getElementById('bluetarget').style.width = '150px';
+            }
           } else if (!grnBig) {
-            document.getElementById('bluetarget').style.height = '0';
-            document.getElementById('bluetarget').style.width = '150px';
-            document.getElementById('redtarget').style.height = '0';
-            document.getElementById('redtarget').style.width = '150px';
-          }
-        } else if (!yelBig) { // make yellow BIG
-          yelBig = true;
-          document.getElementById('yellowtarget').style.height = '300px';
-          document.getElementById('yellowtarget').style.width = '300px';
-          if (grnBig) {
-            document.getElementById('redtarget').style.height = '0px';
-            document.getElementById('redtarget').style.width = '300px';
-            document.getElementById('bluetarget').style.height = '0';
-            document.getElementById('bluetarget').style.width = '300px';
-          } else if (!grnBig) { // green SMALL
-            document.getElementById('redtarget').style.height = '150px';
-            document.getElementById('redtarget').style.width = '150px';
-            document.getElementById('bluetarget').style.height = '0';
-            document.getElementById('bluetarget').style.width = '300px';
-          }
-        }
-      } else if (target_area == "greentarget") {
-        if (grnBig) { // make green SMALL
-          grnBig = false;
-          document.getElementById('greentarget').style.height = '150px';
-          document.getElementById('greentarget').style.width = '150px';
-          if (yelBig) {
-            document.getElementById('redtarget').style.height = '150px';
-            document.getElementById('redtarget').style.width = '150px';
-            document.getElementById('bluetarget').style.height = '0';
-            document.getElementById('bluetarget').style.width = '300px';
-          } else if (!yelBig) {
-            document.getElementById('redtarget').style.height = '0';
-            document.getElementById('redtarget').style.width = '150px';
-            document.getElementById('bluetarget').style.height = '0';
-            document.getElementById('bluetarget').style.width = '150px';
-          }
-        } else if (!grnBig) {
-          grnBig = true;
-          document.getElementById('greentarget').style.height = '300px';
-          document.getElementById('greentarget').style.width = '300px';
-          if (yelBig) {
-            document.getElementById('bluetarget').style.height = '0';
-            document.getElementById('bluetarget').style.width = '300px';
-            document.getElementById('redtarget').style.height = '0';
-            document.getElementById('redtarget').style.width = '300px';
-          } else if (!yelBig) {
-            document.getElementById('bluetarget').style.height = '150px';
-            document.getElementById('bluetarget').style.width = '150px';
-            document.getElementById('redtarget').style.height = '0';
-            document.getElementById('redtarget').style.width = '300px';
+            grnBig = true;
+            document.getElementById('greentarget').style.height = '300px';
+            document.getElementById('greentarget').style.width = '300px';
+            if (yelBig) {
+              document.getElementById('bluetarget').style.height = '0';
+              document.getElementById('bluetarget').style.width = '300px';
+              document.getElementById('redtarget').style.height = '0';
+              document.getElementById('redtarget').style.width = '300px';
+            } else if (!yelBig) {
+              document.getElementById('bluetarget').style.height = '150px';
+              document.getElementById('bluetarget').style.width = '150px';
+              document.getElementById('redtarget').style.height = '0';
+              document.getElementById('redtarget').style.width = '300px';
+            }
           }
         }
       }
-    }
-  </script>
-  <script type="text/javascript">
-    // document.write(new Date().getFullYear());
-    var hex = Math.floor(Math.random() * 0xFFFFFF);
-    var stringo = "#" + ("000000" + hex.toString(16)).substr(-6);
-    // document.write(hex);
-    document.write(stringo);
-    document.body.style.backgroundColor = stringo;
-  </script>
-  <script type='text/javascript'>
-    function bgChange(bg) {
-      document.body.style.background = bg;
-    }
-  </script>
-  <script>
-    /* When the user clicks on the button,
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      toggle between hiding and showing the dropdown content */
-    function myFunction() {
-      document.getElementById("myDropdown").classList.toggle("show");
-    }
+    </script>
+    <script type="text/javascript">
+      // document.write(new Date().getFullYear());
+      var hex = Math.floor(Math.random() * 0xFFFFFF);
+      var stringo = "#" + ("000000" + hex.toString(16)).substr(-6);
+      // document.write(hex);
+      document.write(stringo);
+      document.body.style.backgroundColor = stringo;
+    </script>
+    <script type='text/javascript'>
+      function bgChange(bg) {
+        document.body.style.background = bg;
+      }
+    </script>
+    <script>
+      /* When the user clicks on the button,
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
 
-    // Close the dropdown if the user clicks outside of it
-    window.onclick = function(event) {
-      if (!event.target.matches('.dropbtn')) {
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
 
-        var dropdowns = document.getElementsByClassName("dropdown-content");
-        var i;
-        for (i = 0; i < dropdowns.length; i++) {
-          var openDropdown = dropdowns[i];
-          if (openDropdown.classList.contains('show')) {
-            openDropdown.classList.remove('show');
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
           }
         }
       }
-    }
-  </script>
+    </script>
 </body>
 
 </html>
