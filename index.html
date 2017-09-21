@@ -72,65 +72,65 @@
       if (target_area == "yellowtarget") {
         if (yelBig) { // make yellow SMALL
           yelBig = false;
-          document.getElementById('yellowtarget').style.height = '250px';
-          document.getElementById('yellowtarget').style.width = '250px';
+          document.getElementById('yellowtarget').style.height = '200px';
+          document.getElementById('yellowtarget').style.width = '200px';
           if (grnBig) { // green BIG
-            document.getElementById('bluetarget').style.height = '250px';
-            document.getElementById('bluetarget').style.width = '250px';
+            document.getElementById('bluetarget').style.height = '200px';
+            document.getElementById('bluetarget').style.width = '200px';
             document.getElementById('redtarget').style.height = '0';
-            document.getElementById('redtarget').style.width = '500px';
+            document.getElementById('redtarget').style.width = '400px';
           } else if (!grnBig) {
             document.getElementById('bluetarget').style.height = '0';
-            document.getElementById('bluetarget').style.width = '250px';
+            document.getElementById('bluetarget').style.width = '200px';
             document.getElementById('redtarget').style.height = '0';
-            document.getElementById('redtarget').style.width = '250px';
+            document.getElementById('redtarget').style.width = '200px';
           }
         } else if (!yelBig) { // make yellow BIG
           yelBig = true;
-          document.getElementById('yellowtarget').style.height = '500px';
-          document.getElementById('yellowtarget').style.width = '500px';
+          document.getElementById('yellowtarget').style.height = '400px';
+          document.getElementById('yellowtarget').style.width = '400px';
           if (grnBig) {
             document.getElementById('redtarget').style.height = '0px';
-            document.getElementById('redtarget').style.width = '500px';
+            document.getElementById('redtarget').style.width = '400px';
             document.getElementById('bluetarget').style.height = '0';
-            document.getElementById('bluetarget').style.width = '500px';
+            document.getElementById('bluetarget').style.width = '400px';
           } else if (!grnBig) { // green SMALL
-            document.getElementById('redtarget').style.height = '250px';
-            document.getElementById('redtarget').style.width = '250px';
+            document.getElementById('redtarget').style.height = '200px';
+            document.getElementById('redtarget').style.width = '200px';
             document.getElementById('bluetarget').style.height = '0';
-            document.getElementById('bluetarget').style.width = '500px';
+            document.getElementById('bluetarget').style.width = '400px';
           }
         }
       } else if (target_area == "greentarget") {
         if (grnBig) { // make green SMALL
           grnBig = false;
-          document.getElementById('greentarget').style.height = '250px';
-          document.getElementById('greentarget').style.width = '250px';
+          document.getElementById('greentarget').style.height = '200px';
+          document.getElementById('greentarget').style.width = '200px';
           if (yelBig) {
-            document.getElementById('redtarget').style.height = '250px';
-            document.getElementById('redtarget').style.width = '250px';
+            document.getElementById('redtarget').style.height = '200px';
+            document.getElementById('redtarget').style.width = '200px';
             document.getElementById('bluetarget').style.height = '0';
-            document.getElementById('bluetarget').style.width = '500px';
+            document.getElementById('bluetarget').style.width = '400px';
           } else if (!yelBig) {
             document.getElementById('redtarget').style.height = '0';
-            document.getElementById('redtarget').style.width = '250px';
+            document.getElementById('redtarget').style.width = '200px';
             document.getElementById('bluetarget').style.height = '0';
-            document.getElementById('bluetarget').style.width = '250px';
+            document.getElementById('bluetarget').style.width = '200px';
           }
         } else if (!grnBig) {
           grnBig = true;
-          document.getElementById('greentarget').style.height = '500px';
-          document.getElementById('greentarget').style.width = '500px';
+          document.getElementById('greentarget').style.height = '400px';
+          document.getElementById('greentarget').style.width = '400px';
           if (yelBig) {
             document.getElementById('bluetarget').style.height = '0';
-            document.getElementById('bluetarget').style.width = '500px';
+            document.getElementById('bluetarget').style.width = '400px';
             document.getElementById('redtarget').style.height = '0';
-            document.getElementById('redtarget').style.width = '500px';
+            document.getElementById('redtarget').style.width = '400px';
           } else if (!yelBig) {
-            document.getElementById('bluetarget').style.height = '250px';
-            document.getElementById('bluetarget').style.width = '250px';
+            document.getElementById('bluetarget').style.height = '200px';
+            document.getElementById('bluetarget').style.width = '200px';
             document.getElementById('redtarget').style.height = '0';
-            document.getElementById('redtarget').style.width = '500px';
+            document.getElementById('redtarget').style.width = '400px';
           }
         }
       }
@@ -151,7 +151,7 @@
   </script>
   <script>
     /* When the user clicks on the button,
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              toggle between hiding and showing the dropdown content */
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  toggle between hiding and showing the dropdown content */
     function myFunction() {
       document.getElementById("myDropdown").classList.toggle("show");
     }
