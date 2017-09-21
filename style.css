@@ -79,11 +79,11 @@ body {
 }
 
 .color-button {
-   transition: 1s;
-   height: 100px;
-   width: 100px;
-   display: inline-block;
-   text-align: center;
+   transition: .35s;
+   height: 250px;
+   width: 250px;
+   display: block;
+   text-align: left;
    margin: auto;
 }
 .site-button {

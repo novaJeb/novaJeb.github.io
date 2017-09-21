@@ -13,7 +13,7 @@
 <body>
   <div class='container'>
     <div style='margin-bottom: 20px; padding: 20px; border-bottom: 5px solid; box-shadow: 0 15px 30px -20px #000;'>
-      <h1 style='font-family: Roboto; font-size: 100px; text-shadow: 2px 2px 2px #FFFFFF;'>Matt's Test Website</h1>
+      <h1 style='font-family: Roboto; font-size: 110px; text-shadow: 2px 2px 2px #FFFFFF;'>Matt's Test Website</h1>
       <script>
         document.write(document.body.style.backgroundColor);
       </script>
@@ -31,6 +31,20 @@
   <div style='background-color: rgba(220, 220, 220, 0.4); text-align: center; font-size: 0;'>
     <div>
       <div style='display: inline-block'>
+        <div id='redtarget' class='color-button' style='background-color: yellow; height: 0;'>
+        </div>
+        <div id='greentarget' class='color-button' style='background-color: green; font-size: 10px;' onclick='toggleOr("greentarget")'>
+        </div>
+      </div>
+      <div style='display: inline-block'>
+        <div id='bluetarget' class='color-button' style='background-color: green; height: 0;'>
+        </div>
+        <div id='yellowtarget' class='color-button' style='background-color: yellow;' onclick='toggleOr("yellowtarget")'>
+        </div>
+      </div>
+    </div>
+    <!-- <div>
+      <div style='display: inline-block'>
         <div id='redtarget' class='color-button' style='background-color: red;' onclick='toggleInfo("redtarget")'></div>
         <div id='greentarget' class='color-button' style='background-color: green;' onclick='toggleInfo("greentarget")'></div>
       </div>
@@ -38,37 +52,7 @@
         <div id='bluetarget' class='color-button' style='background-color: blue;' onclick='toggleInfo("bluetarget")'></div>
         <div id='yellowtarget' class='color-button' style='background-color: yellow;' onclick='toggleInfo("yellowtarget")'></div>
       </div>
-    </div>
-    <div>
-      <div style='display: inline-block'>
-        <div id='redtarget2' class='color-button' style='background-color: red;' onclick='toggleInfo("redtarget2")'></div>
-        <div id='greentarget2' class='color-button' style='background-color: green;' onclick='toggleInfo("greentarget2")'></div>
-      </div>
-      <div style='display: inline-block'>
-        <div id='bluetarget2' class='color-button' style='background-color: blue;' onclick='toggleInfo("bluetarget2")'></div>
-        <div id='yellowtarget2' class='color-button' style='background-color: yellow;' onclick='toggleInfo("yellowtarget2")'></div>
-      </div>
-    </div>
-    <div>
-      <div style='display: inline-block'>
-        <div id='redtarget3' class='color-button' style='background-color: red;' onclick='toggleInfo("redtarget3")'></div>
-        <div id='greentarget3' class='color-button' style='background-color: green;' onclick='toggleInfo("greentarget3")'></div>
-      </div>
-      <div style='display: inline-block'>
-        <div id='bluetarget3' class='color-button' style='background-color: blue;' onclick='toggleInfo("bluetarget3")'></div>
-        <div id='yellowtarget3' class='color-button' style='background-color: yellow;' onclick='toggleInfo("yellowtarget3")'></div>
-      </div>
-    </div>
-    <div>
-      <div style='display: inline-block'>
-        <div id='redtarget4' class='color-button' style='background-color: red;' onclick='toggleInfo("redtarget4")'></div>
-        <div id='greentarget4' class='color-button' style='background-color: green;' onclick='toggleInfo("greentarget4")'></div>
-      </div>
-      <div style='display: inline-block'>
-        <div id='bluetarget4' class='color-button' style='background-color: blue;' onclick='toggleInfo("bluetarget4")'></div>
-        <div id='yellowtarget4' class='color-button' style='background-color: yellow;' onclick='toggleInfo("yellowtarget4")'></div>
-      </div>
-    </div>
+    </div> -->
   </div>
   <div class="dropdown">
     <button onclick="myFunction()" class="dropbtn">Dropdown</button>
@@ -80,30 +64,75 @@
   </div>
   <a class='foot-button' href='Contact.html'>Contact Us</a>
   <script>
-    function toggleInfo(target_area) {
-      var targo = document.getElementById(target_area);
-      var targonum = targo.clientHeight;
-      if (targonum < 200) {
-        targo.style.height = '200px';
-        targo.style.width = '200px';
-      } else if (targonum > 100) {
-        targo.style.height = '100px';
-        targo.style.width = '100px';
-      }
-    }
-  </script>
-  <script>
-    function checktallness(curthinger, target_area) {
-      var targo = document.getElementById(target_area);
-      var targo2 = document.getElementById(curthinger);
-      var targonum = targo.clientHeight;
-      var targonum2 = targo2.clientHeight;
-      if (targonum2 < 200) {
-        targo.style.height = '200px';
-        // targo.style.width = '200px';
-      } else if (targonum2 > 100) {
-        targo.style.height = '100px';
-        // targo.style.width = '100px';
+    var yelBig = false;
+    var grnBig = false;
+
+    function toggleOr(target_area) {
+      // alert('yelBig=' + yelBig + '|| grnBig=' + grnBig);
+      if (target_area == "yellowtarget") {
+        if (yelBig) { // make yellow SMALL
+          yelBig = false;
+          document.getElementById('yellowtarget').style.height = '250px';
+          document.getElementById('yellowtarget').style.width = '250px';
+          if (grnBig) { // green BIG
+            document.getElementById('bluetarget').style.height = '250px';
+            document.getElementById('bluetarget').style.width = '250px';
+            document.getElementById('redtarget').style.height = '0';
+            document.getElementById('redtarget').style.width = '500px';
+          } else if (!grnBig) {
+            document.getElementById('bluetarget').style.height = '0';
+            document.getElementById('bluetarget').style.width = '250px';
+            document.getElementById('redtarget').style.height = '0';
+            document.getElementById('redtarget').style.width = '250px';
+          }
+        } else if (!yelBig) { // make yellow BIG
+          yelBig = true;
+          document.getElementById('yellowtarget').style.height = '500px';
+          document.getElementById('yellowtarget').style.width = '500px';
+          if (grnBig) {
+            document.getElementById('redtarget').style.height = '0px';
+            document.getElementById('redtarget').style.width = '500px';
+            document.getElementById('bluetarget').style.height = '0';
+            document.getElementById('bluetarget').style.width = '500px';
+          } else if (!grnBig) { // green SMALL
+            document.getElementById('redtarget').style.height = '250px';
+            document.getElementById('redtarget').style.width = '250px';
+            document.getElementById('bluetarget').style.height = '0';
+            document.getElementById('bluetarget').style.width = '500px';
+          }
+        }
+      } else if (target_area == "greentarget") {
+        if (grnBig) { // make green SMALL
+          grnBig = false;
+          document.getElementById('greentarget').style.height = '250px';
+          document.getElementById('greentarget').style.width = '250px';
+          if (yelBig) {
+            document.getElementById('redtarget').style.height = '250px';
+            document.getElementById('redtarget').style.width = '250px';
+            document.getElementById('bluetarget').style.height = '0';
+            document.getElementById('bluetarget').style.width = '500px';
+          } else if (!yelBig) {
+            document.getElementById('redtarget').style.height = '0';
+            document.getElementById('redtarget').style.width = '250px';
+            document.getElementById('bluetarget').style.height = '0';
+            document.getElementById('bluetarget').style.width = '250px';
+          }
+        } else if (!grnBig) {
+          grnBig = true;
+          document.getElementById('greentarget').style.height = '500px';
+          document.getElementById('greentarget').style.width = '500px';
+          if (yelBig) {
+            document.getElementById('bluetarget').style.height = '0';
+            document.getElementById('bluetarget').style.width = '500px';
+            document.getElementById('redtarget').style.height = '0';
+            document.getElementById('redtarget').style.width = '500px';
+          } else if (!yelBig) {
+            document.getElementById('bluetarget').style.height = '250px';
+            document.getElementById('bluetarget').style.width = '250px';
+            document.getElementById('redtarget').style.height = '0';
+            document.getElementById('redtarget').style.width = '500px';
+          }
+        }
       }
     }
   </script>
@@ -122,7 +151,7 @@
   </script>
   <script>
     /* When the user clicks on the button,
-                                                                                                                                                                                                                                                              toggle between hiding and showing the dropdown content */
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              toggle between hiding and showing the dropdown content */
     function myFunction() {
       document.getElementById("myDropdown").classList.toggle("show");
     }
