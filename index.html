@@ -1,71 +1,119 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset='UTF-8'>
-    <!-- <meta name='viewport' content='width=device-width'> -->
-    <title>Matt's Test Website</title>
-    <link rel='stylesheet' type='text/css' href='style.css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-    <link rel="icon" href="../favicon.png" type="image/x-icon">
-  </head>
-  <body>
-    <div class='container'>
-      <div style='margin-bottom: 20px; padding: 20px; border-bottom: 5px solid; box-shadow: 0 15px 30px -20px #000;'>
-        <h1 style='font-family: Roboto; font-size: 100px; text-shadow: 2px 2px 2px #FFFFFF;'>Matt's Test Website</h1><script>document.write(document.body.style.backgroundColor);</script>
-      </div>
-      <!-- <a onmouseover='bgChange("#134259")' id='FOHHbutton' class='site-button' href='FOHH/Home.html'><img src='fohhpic.png' class='button-pic' alt='FOHH'>Friends of Holmes Harbor</a>
+
+<head>
+  <meta charset='UTF-8'>
+  <!-- <meta name='viewport' content='width=device-width'> -->
+  <title>Matt's Test Website</title>
+  <link rel='stylesheet' type='text/css' href='style.css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+  <link rel="icon" href="../favicon.png" type="image/x-icon">
+</head>
+
+<body>
+  <div class='container'>
+    <div style='margin-bottom: 20px; padding: 20px; border-bottom: 5px solid; box-shadow: 0 15px 30px -20px #000;'>
+      <h1 style='font-family: Roboto; font-size: 100px; text-shadow: 2px 2px 2px #FFFFFF;'>Matt's Test Website</h1>
+      <script>
+        document.write(document.body.style.backgroundColor);
+      </script>
+    </div>
+    <!-- <a onmouseover='bgChange("#134259")' id='FOHHbutton' class='site-button' href='FOHH/Home.html'><img src='fohhpic.png' class='button-pic' alt='FOHH'>Friends of Holmes Harbor</a>
       <a onmouseover='bgChange("#D8867C")' id='Gitbutton' class='site-button' href='https://github.com/novaJeb'><img src='gitpic.png' class='button-pic' alt='GitHub'>GitHub</br></br></a>
       <a onmouseover='bgChange("#FBDBA8")' id='Artbutton' class='site-button' href=''><img src='lionpic.png' class='button-pic' alt='Art Stuff'>Art Stuff</br></br></a>
       <a onmouseover='bgChange("#7DC0DB")' id='Rabbutton' class='site-button' href='rabbos/home.html'><img src='rabbitpic.png' class='button-pic' alt='Rabbits'>RABBOS</br></br></a> -->
 
-      <a id='FOHHbutton' class='site-button' href='FOHH/Home.html'><img src='fohhpic.png' class='button-pic' alt='FOHH'>Friends of Holmes Harbor</a>
-      <a id='Gitbutton' class='site-button' href='https://github.com/novaJeb'><img src='gitpic.png' class='button-pic' alt='GitHub'>GitHub</br></br></a>
-      <a id='Artbutton' class='site-button' href='#'><img src='lionpic.png' class='button-pic' alt='Art Stuff'>Art Stuff</br></br></a>
-      <a id='Rabbutton' class='site-button' href='rabbos/home.html'><img src='rabbitpic.png' class='button-pic' alt='Rabbits'>RABBOS</br></br></a>
-    </div>
-    <div class="dropdown">
-      <button onclick="myFunction()" class="dropbtn">Dropdown</button>
-      <div id="myDropdown" class="dropdown-content">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
+    <a id='FOHHbutton' class='site-button' href='FOHH/Home.html'><img src='fohhpic.png' class='button-pic' alt='FOHH'>Friends of Holmes Harbor</a>
+    <a id='Gitbutton' class='site-button' href='https://github.com/novaJeb'><img src='gitpic.png' class='button-pic' alt='GitHub'>GitHub</br></br></a>
+    <a id='Artbutton' class='site-button' href='#'><img src='lionpic.png' class='button-pic' alt='Art Stuff'>Art Stuff</br></br></a>
+    <a id='Rabbutton' class='site-button' href='rabbos/home.html'><img src='rabbitpic.png' class='button-pic' alt='Rabbits'>RABBOS</br></br></a>
+  </div>
+  <div style='background-color: #EEE; height: 400px; display: center; text-align: center; font-size: 0;'>
+    <div>
+      <div id='redtarget' style='transition: 1s; background-color: red; height: 100px; width: 100px; display: inline-block; text-align: center; margin: auto;' onclick='toggleInfo("redtarget");checktallness("redtarget","bluetarget")'>
+      </div>
+      <div id='bluetarget' style='transition: 1s; background-color: blue; height: 100px; width: 100px; display: inline-block; text-align: center; margin: auto;' onclick='toggleInfo("bluetarget");checktallness("bluetarget","redtarget")'>
       </div>
     </div>
-    <a class='foot-button' href='Contact.html'>Contact Us</a>
-    <script type="text/javascript">
-      // document.write(new Date().getFullYear());
-      var hex = Math.floor(Math.random() * 0xFFFFFF);
-      var stringo = "#" + ("000000" + hex.toString(16)).substr(-6);
-      // document.write(hex);
-      document.write(stringo);
-      document.body.style.backgroundColor = stringo;
-    </script>
-    <script type='text/javascript'>
-      function bgChange(bg) {
-        document.body.style.background = bg;
+    <div>
+      <div id='blacktarget' style='transition: 1s; background-color: black; height: 100px; width: 100px; display: inline-block; text-align: center; margin: auto;' onclick='toggleInfo("blacktarget");checktallness("blacktarget","greentarget")'>
+      </div>
+      <div id='greentarget' style='transition: 1s; background-color: green; height: 100px; width: 100px; display: inline-block; text-align: center; margin: auto;' onclick='toggleInfo("greentarget");checktallness("greentarget","blacktarget")'>
+      </div>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+    <div id="myDropdown" class="dropdown-content">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+  <a class='foot-button' href='Contact.html'>Contact Us</a>
+  <script>
+    function toggleInfo(target_area) {
+      var targo = document.getElementById(target_area);
+      var targonum = targo.clientHeight;
+      if (targonum < 200) {
+        targo.style.height = '200px';
+        targo.style.width = '200px';
+      } else if (targonum > 100) {
+        targo.style.height = '100px';
+        targo.style.width = '100px';
       }
-    </script>
-    <script>
-      /* When the user clicks on the button,
-      toggle between hiding and showing the dropdown content */
-      function myFunction() {
-          document.getElementById("myDropdown").classList.toggle("show");
+    }
+  </script>
+  <script>
+    function checktallness(curthinger, target_area) {
+      var targo = document.getElementById(target_area);
+      var targo2 = document.getElementById(curthinger);
+      var targonum = targo.clientHeight;
+      var targonum2 = targo2.clientHeight;
+      if (targonum2 < 200) {
+        targo.style.height = '200px';
+        // targo.style.width = '200px';
+      } else if (targonum2 > 100) {
+        targo.style.height = '100px';
+        // targo.style.width = '100px';
       }
+    }
+  </script>
+  <script type="text/javascript">
+    // document.write(new Date().getFullYear());
+    var hex = Math.floor(Math.random() * 0xFFFFFF);
+    var stringo = "#" + ("000000" + hex.toString(16)).substr(-6);
+    // document.write(hex);
+    document.write(stringo);
+    document.body.style.backgroundColor = stringo;
+  </script>
+  <script type='text/javascript'>
+    function bgChange(bg) {
+      document.body.style.background = bg;
+    }
+  </script>
+  <script>
+    /* When the user clicks on the button,
+                                                                                                                                                                                              toggle between hiding and showing the dropdown content */
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
 
-      // Close the dropdown if the user clicks outside of it
-      window.onclick = function(event) {
-        if (!event.target.matches('.dropbtn')) {
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
 
-          var dropdowns = document.getElementsByClassName("dropdown-content");
-          var i;
-          for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-              openDropdown.classList.remove('show');
-            }
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
           }
         }
       }
-    </script>
-  </body>
+    }
+  </script>
+</body>
+
 </html>
