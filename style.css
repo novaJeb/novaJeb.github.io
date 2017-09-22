@@ -83,7 +83,7 @@ body {
    transition: .35s;
    height: 150px;
    width: 150px;
-   display: block;
+   display: fixed;
    text-align: left;
    margin: auto;
 }

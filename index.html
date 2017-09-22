@@ -31,15 +31,15 @@
       <h2 style='font-family: Roboto; font-size: 30px;'>Click the squares to make them do the thing</h2>
       <div>
         <div style='display: inline-block'>
-          <div id='redtarget' class='color-button' style='background-image: url("blackgear.png"); background-position: center; background-color: yellow; height: 0;'>
+          <div id='redtarget' class='color-button' style='background-image: url("blackgear.png"); background-position: center; background-color: white; height: 0;' onclick='makewhite()'>
           </div>
-          <div id='greentarget' class='color-button' style='background-color: green;' onclick='toggleOr("greentarget")'>
+          <div id='greentarget' class='color-button' style='background-color: black;' onclick='toggleOr("greentarget")'>
           </div>
         </div>
         <div style='display: inline-block'>
-          <div id='bluetarget' class='color-button' style='background-image: url("whitegear.png"); background-position: center;background-color: green; height: 0;'>
+          <div id='bluetarget' class='color-button' style='background-image: url("whitegear.png"); background-position: center;background-color: black; height: 0;' onclick='makeblack()'>
           </div>
-          <div id='yellowtarget' class='color-button' style='background-color: yellow;' onclick='toggleOr("yellowtarget")'>
+          <div id='yellowtarget' class='color-button' style='background-color: white;' onclick='toggleOr("yellowtarget")'>
           </div>
         </div>
       </div>
@@ -134,6 +134,15 @@
             }
           }
         }
+      }
+    </script>
+    <script>
+      function makewhite() {
+        document.body.style.backgroundColor = "#FFF";
+      }
+
+      function makeblack() {
+        document.body.style.backgroundColor = "#000";
       }
     </script>
     <script type="text/javascript">
