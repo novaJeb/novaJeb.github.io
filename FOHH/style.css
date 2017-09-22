@@ -8,6 +8,7 @@
 
 body {
   background-color: rgb(19, 66, 89);
+  background-image: url('testbacker3.png');
   /*font-family: Arial, sans-serif;*/
   /*font-family: 'Open-Sans', sans-serif;*/
   /*text-align: center;*/
@@ -113,6 +114,8 @@ h3 {
 .content {
   padding: 30px 10px;
   font-size: 0;
+  /*background-color: rgb(96, 139, 21)*/
+  /*background-color: rgba(232, 232, 232, 1);*/
 }
 
 .content-area {
@@ -364,6 +367,7 @@ h3 {
 
 .text-white {
   color: rgb(232, 232, 232);
+  /*color: black;*/
 }
 
 .text-yello {

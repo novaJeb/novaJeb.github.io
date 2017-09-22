@@ -60,6 +60,7 @@ body {
   font-family: Arial, sans-serif;
   /*text-align: center;*/
   /*overflow-y: scroll;*/
+  background-image: url('backtest3.png');
 }
 
 .container {
