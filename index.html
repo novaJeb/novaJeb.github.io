@@ -139,12 +139,12 @@
     <script>
       function makewhite() {
         document.body.style.backgroundColor = "#FFF";
-        document.GetElementById('theme-color').setAttribute("content", "#FFF");
+        document.getElementsByName('theme-color')[0].setAttribute("content", "#FFF");
       }
 
       function makeblack() {
         document.body.style.backgroundColor = "#000";
-        document.GetElementById('theme-color').setAttribute("content", "#000");
+        document.getElementsByName('theme-color')[0].setAttribute("content", "#000");
       }
     </script>
     <script type="text/javascript">
