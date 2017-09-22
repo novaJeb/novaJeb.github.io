@@ -3,7 +3,7 @@
 
 <head>
   <meta charset='UTF-8'>
-  <meta name="theme-color" content="#ff6600" />
+  <meta name="theme-color" content=>
   <!-- <meta name='viewport' content='width=device-width'> -->
   <title>Matt's Test Website</title>
   <link rel='stylesheet' type='text/css' href='style.css'>
@@ -142,6 +142,34 @@
       // document.write(hex);
       document.write(stringo);
       document.body.style.backgroundColor = stringo;
+      // document.themeColor.content = stringo;
+      // var metaArray = document.getElementsByName('theme-color');
+      // metaArray.setAttribute('http-equiv', 'X-UA-Compatible');
+      // var stuff = document.getEleMentsByTagName('head');
+      // var meta = document.createElement('meta');
+      // meta.setAttribute('content', stringo);
+      // document.getElementsByTagName('head').appendChild(meta);
+      // alert(metaArray[0]);
+      // var newthing = document.getElementsByName('theme-color').getAttribute('content');
+      // alert()
+      // for (var i = 0; i < metaArray.length; i++) {
+      // document.write(metaArray[i].content + '<br>');
+      // }
+      var thingo = document.getElementsByName('theme-color');
+      // alert(thingo[0].getAttribute('name'));
+      var allMetaElements = document.getElementsByTagName('meta');
+      //loop through and find the element you want
+      for (var i = 0; i < allMetaElements.length; i++) {
+        if (allMetaElements[i].getAttribute("name") == "theme-color") {
+          //make necessary changes
+          allMetaElements[i].setAttribute("content", stringo);
+          // var yoyo = allMetalElements[i].getAttribute("content")
+          alert()
+          // alert()
+          //no need to continue loop after making changes.
+          break;
+        }
+      }
     </script>
     <script type='text/javascript'>
       function bgChange(bg) {
@@ -149,8 +177,7 @@
       }
     </script>
     <script>
-      /* When the user clicks on the button,
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              toggle between hiding and showing the dropdown content */
+      /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
       function myFunction() {
         document.getElementById("myDropdown").classList.toggle("show");
       }
