@@ -54,6 +54,7 @@
       </div>
     </div> -->
     </div>
+    <h2 style='font-size: 15px;' id='counto' onclick='touchered()'>COUNTER?</h2>
     <!-- <div class="dropdown">
       <button onclick="myFunction()" class="dropbtn">Dropdown</button>
       <div id="myDropdown" class="dropdown-content">
@@ -63,6 +64,18 @@
       </div>
     </div> -->
     <!-- <a class='foot-button' href='Contact.html'>Contact Us</a> -->
+    <script>
+      var countometer = 0;
+
+      function touchered() {
+        countometer++;
+        var num = 15 + (countometer * 5);
+        var numstring = num.toString();
+        var newstring = numstring + 'px';
+        // alert(newstring);
+        document.getElementById('counto').style.fontSize = numstring + 'px';
+      }
+    </script>
     <script>
       var yelBig = false;
       var grnBig = false;
