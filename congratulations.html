@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+</head>
+
+<body>
+  <script>
+    window.onload = function() {
+      var currentColor = 'red';
+      setInterval(function() {
+        document.body.style.backgroundColor = currentColor;
+        currentColor = currentColor === 'red' ? 'green' : 'red';
+      }, 1);
+    };
+  </script>
+</body>
+
+</html>
