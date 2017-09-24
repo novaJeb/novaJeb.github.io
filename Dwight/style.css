@@ -21,11 +21,11 @@ body {
 }
 .ribbon-link-left {
   display: block;
-  padding: 10px;
+  padding: 50px;
   margin: 10px 0;
   background-color: #003300;
   color: #FFF;
-  font-size: 25px;
+  font-size: 50px;
   /*font-family: Verdana;*/
   text-decoration: none;
   transition: .25s cubic-bezier(.72,0,.48,.99) ;
@@ -36,11 +36,11 @@ body {
 }
 .ribbon-link-right {
   display: block;
-  padding: 10px;
+  padding: 50px;
   margin: 10px 0;
   background-color: #003300;
   color: #FFF;
-  font-size: 25px;
+  font-size: 50px;
   /*font-family: Verdana;*/
   text-decoration: none;
   transition: .25s cubic-bezier(.72,0,.48,.99);
