@@ -61,6 +61,16 @@ body {
   /*text-align: center;*/
   /*overflow-y: scroll;*/
   /*background-image: url('backtest3.png');*/
+  background-image: url('test.png');
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .container {
@@ -86,6 +96,7 @@ body {
    display: block;
    text-align: left;
    margin: auto;
+   cursor: pointer;
 }
 .site-button {
     max-width: 250px;

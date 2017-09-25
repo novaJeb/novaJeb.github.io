@@ -18,37 +18,23 @@ body {
 
 .button-area {
   text-align: left;
+  /*display: inline-block;*/
 }
-.ribbon-link-left {
+.ribbon-link {
   display: block;
   padding: 50px;
   margin: 10px 0;
   background-color: #003300;
   color: #FFF;
   font-size: 50px;
-  /*font-family: Verdana;*/
   text-decoration: none;
   transition: .25s cubic-bezier(.72,0,.48,.99) ;
-  width: 80%;
-  padding-left: 50px;
+  width: 70%;
+  /*padding-left: 50px;*/
   box-shadow: 1px 1px 3px #000;
   text-align: right;
 }
-.ribbon-link-right {
-  display: block;
-  padding: 50px;
-  margin: 10px 0;
-  background-color: #003300;
-  color: #FFF;
-  font-size: 50px;
-  /*font-family: Verdana;*/
-  text-decoration: none;
-  transition: .25s cubic-bezier(.72,0,.48,.99);
-  width: 150px;
-  padding-right: 50px;
-  box-shadow: 1px 1px 3px #000;
-  text-align: right;
-}
+
 .text-left {
   text-align: left;
 }
@@ -65,13 +51,8 @@ body {
   text-decoration: none;
 }
 
-.ribbon-link-left:hover {
+.ribbon-link:hover {
   /*background-color: #FFF;*/
   /*width: 400px;*/
-  padding-left: 100px;
-}
-.ribbon-link-right:hover {
-  /*background-color: #FFF;*/
-  /*width: 400px;*/
-  padding-right: 100px;
+  padding-left: 23%;
 }
