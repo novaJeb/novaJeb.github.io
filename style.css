@@ -13,42 +13,6 @@ a:visited {
   text-decoration: none;
 }
 
-/*#FOHHbutton:hover:before{
-    content: '';
-    position: fixed;
-    display: block;
-    top: 0; bottom: 0; left: 0; right: 0;
-    z-index: -1;
-    background-color: #134259;
-}
-
-#Gitbutton:hover:before{
-    content: '';
-    position: fixed;
-    display: block;
-    top: 0; bottom: 0; left: 0; right: 0;
-    z-index: -1;
-    background-color: #D8867C;
-}
-
-#Artbutton:hover:before{
-    content: '';
-    position: fixed;
-    display: block;
-    top: 0; bottom: 0; left: 0; right: 0;
-    z-index: -1;
-    background-color: #FBDBA8;
-}
-
-#Rabbutton:hover:before{
-    content: '';
-    position: fixed;
-    display: block;
-    top: 0; bottom: 0; left: 0; right: 0;
-    z-index: -1;
-    background-color: #7DC0DB;
-}*/
-
 h1 {
     font-size: 70px;
 }
